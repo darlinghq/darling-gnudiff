@@ -74,3 +74,11 @@ add_darling_executable(sdiff $<TARGET_OBJECTS:diffutils> diffutils/src/sdiff.c)
 install(TARGETS diff cmp diff3 sdiff
 	DESTINATION libexec/darling/usr/bin)
 
+set(man1
+	diffutils/man/cmp.1
+	diffutils/man/diff.1
+	diffutils/man/diff3.1
+	diffutils/man/sdiff.1
+)
+
+install(FILES ${man1} DESTINATION libexec/darling/usr/share/man/man1)
