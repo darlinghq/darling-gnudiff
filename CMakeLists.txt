@@ -58,7 +58,7 @@ set(diffutils_sources
 	diffutils/lib/xstrtoumax.c
 	diffutils/src/version.c
 )
-add_library(diffutils OBJECT ${diffutils_sources})
+add_darling_object_library(diffutils ${diffutils_sources})
 
 set(diff_sources
     diffutils/src/analyze.c
