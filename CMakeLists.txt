@@ -20,13 +20,6 @@ add_definitions(
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -nostdinc -fPIC")
 
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/include/FreeBSD)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/include/NetBSD)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/gen)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/darwin)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/stdtime/FreeBSD)
-include_directories(${CMAKE_SOURCE_DIR}/src/launchd/liblaunch)
-include_directories(${CMAKE_SOURCE_DIR}/src/external/libdispatch)
 include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR}/diffutils/lib)
 include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR}/diffutils/lib/posix)
 include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR}/diffutils)
